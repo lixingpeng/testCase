@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javaScript函数</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function foo() {
+				var x = 1;
+				function bar() {
+					var x = 'A';
+					console.log('x in bar() = ' + x); // 'A'
+				}
+				console.log('x in foo() = ' + x); // 1
+				bar();
+			}
+
+			foo();
+			function bar(x) {
+				if(x > 0){
+					return x
+				}else {
+					return x
+				}
+			}
+			console.log(bar(10));
+			console.log(bar(-10));
+			console.log(a)
+			var a = 100;
+			//变量提升  只是将变量的声明提升到了全局的顶部  但是变量的赋值是没有进行提升的;所以在输出变量a时会得到undefined
+			let arr = [1,2,3,4,5];
+			[one,two] = arr;
+			[o,t,...three] = arr;
+			console.log(one);
+			console.log(two);
+			console.log(o);
+			console.log(t);
+			console.log(three);
+			let obj = {name:'力量',age:10};
+			let {name:n,age:m} = obj;
+			({name,age} = obj);
+			console.log(name);
+			console.log(age);
+			console.log(n);
+			console.log(m);
+		</script>
+	</body>
+</html>

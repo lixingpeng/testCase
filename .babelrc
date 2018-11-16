@@ -1,0 +1,10 @@
+{
+  “presets”:[
+  	'lastest',
+  	'stage-0',
+  	'es2015'
+  ],
+  "plugins": [
+  	
+  ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style type="text/css">
+		#app {
+			margin: auto;
+			text-align: center;
+		}
+		#app ul {
+			height: auto;
+		}
+		#app ul li {
+			list-style: none;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid bisque;
+			border-top: none;
+			font-size: 16px;
+			font-family: "engravers mt";
+		}
+		#app ul li:first-child {
+			color: red;
+			border: 1px solid bisque;
+		}
+		#app ul li:last-child {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		var app = document.getElementById('app');
+		console.log(app);
+		console.log(app.innerHTML);
+		var hello = function() {
+			var MAX_NUM = 2;
+			return (function num() {
+				return MAX_NUM
+			})();
+		}
+		console.log(hello());
+		console.log(window.navigator.appName);
+	</script>
+</body>
+</html>

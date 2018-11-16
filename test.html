@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>es6解构</title>
+</head>
+<body>
+	<div id="box">
+		<div class="app">
+			<ul>
+				<li>赤</li>
+				<li>橙</li>
+				<li>黄</li>
+				<li>绿</li>
+			</ul>
+		</div>
+		<input type="button"
+			onclick="document.body.style.backgroundColor='lavender';"
+			value="修改背景颜色">
+	</div>
+	<script>
+		var box = document.getElementById('box');
+		var ul = document.getElementsByTagName('ul');
+		var oLi = document.createElement('li');
+		oLi.innerHTML = "蓝";
+		ul[0].appendChild(oLi);
+		console.log(ul.nodeName);
+		console.log(box.nodeType);
+		console.log(oLi.innerHTML);
+		console.log()
+	</script>
+</body>
+</html>

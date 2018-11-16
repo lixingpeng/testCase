@@ -1,0 +1,32 @@
+{
+  "name": "testcase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixingpeng/testCase.git"
+  },
+  "keywords": [
+    "lixingpeng123"
+  ],
+  "author": "lixingpeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixingpeng/testCase/issues"
+  },
+  "homepage": "https://github.com/lixingpeng/testCase#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
